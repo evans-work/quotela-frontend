@@ -1,0 +1,23 @@
+.quote-crud
+{
+   display:flex;
+   flex-direction: row;
+   flex-wrap:nowrap;
+   justify-content: space-between;
+   align-items: center;
+   margin:auto;
+   width:100%;
+}
+.notifications{
+   position: sticky;
+   top: 0;
+   max-height: 20vh;
+   overflow-y: auto;
+   margin: 10px auto;
+   
+}
+@media only screen and (min-width:760px){
+   .quote-crud{
+      width:60%;
+   }
+}

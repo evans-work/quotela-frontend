@@ -1,0 +1,18 @@
+<nav class="nav">
+<img [src]="logoUrl" alt="Quotela"(click)="onGoToHomePage()">
+<div class="when-logged-in"*ngIf="loggedIn">
+   <app-user
+   [firstName] = 'firstName'
+   [lastName] = 'lastName'
+   >
+</app-user>
+   <app-logout
+   (logoutUser) = "onLogout()">
+   </app-logout>
+</div>
+
+<div class="when-logged-out"*ngIf="loggedOut">
+   <app-login-btn></app-login-btn>
+   <app-register-btn></app-register-btn>
+</div>
+</nav>

@@ -1,0 +1,18 @@
+.update-quote-page{
+   background-color:#f3f3f3;
+}
+.update-quote-form{
+   width:98%;
+   padding:5px;
+   height: max-content;
+   display:block;
+   margin: auto;
+   background-color: white;
+}
+
+@media only screen and (min-width: 760px){
+   .update-quote-form{
+      width:60%;
+      margin:auto
+   }
+}

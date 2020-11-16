@@ -1,0 +1,20 @@
+<form [formGroup]="registerForm"(ngSubmit) = "onSubmit(registerForm.value)" class="register-form">
+   <h3>Register</h3>
+   <app-error
+   *ngIf="showError"
+   [errorMessage] = "errorMessage">
+
+   </app-error>
+   <input type="text" formControlName="firstName" id="first-name"placeholder="First Name">
+   <input type="text" formControlName="lastName"id="last-name"placeholder="Last Name">
+   <input type="email" formControlName="email"id="email"placeholder="Email">
+   <input type="password" formControlName="password"id="password"placeholder="Password">
+   <input type="password" formControlName="confirmPassword" id="confirm-password" placeholder="Confirm Password">
+   <button 
+   [class]="submitClass" 
+   [disabled] = "disabled"
+   type="submit">Register</button>
+   <small>Already have an account?
+      <a routerLink = "/login">Login Here</a>
+   </small>
+</form>

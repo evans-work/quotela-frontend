@@ -1,0 +1,20 @@
+<form [formGroup]="quoteForm"(ngSubmit) = "onSubmit(quoteForm.value)" class="quote-form">
+   <h3>{{action}} Quote</h3>
+   <app-success 
+   *ngIf="showSuccess"
+   [successMessage] = "successMessage">
+   </app-success>
+   <app-error 
+   *ngIf="showError"
+   [errorMessage]= "errorMessage">
+   </app-error>
+   <input type="text" formControlName="by" id="by"placeholder="Quote by">
+   <input type="text" formControlName="backgroundColor"id="backgroundColor"placeholder="Background color">
+   <input type="text" formControlName="textColor"id="textColor"placeholder="Text color">
+   <textarea type="text" id="quote" formControlName= "quoteText"placeholder="Your quote"></textarea>
+<button 
+[class]="submitClass" 
+type="submit" 
+[disabled] = "disabled" 
+>{{action.toUpperCase()}} QUOTE</button>
+</form>

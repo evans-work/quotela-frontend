@@ -1,0 +1,16 @@
+.quote-block{
+   padding:5px 10px;
+   font-size: 1.2rem;
+   background-color: rgb(35, 5, 119);
+   color:white;
+
+}
+.quote-block h4{
+   text-align: right;
+   font-size: 1.3rem;
+   text-transform: capitalize;
+}
+.quote-block p span{
+   padding:3px;
+   object-fit: contain;
+}

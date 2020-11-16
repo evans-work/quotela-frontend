@@ -1,0 +1,20 @@
+<div class="notifications">
+   <app-message
+   *ngIf="notify"
+   [message] = "message">
+</app-message>
+</div>
+<div *ngIf="isLoggedIn" class="quote-crud">
+   <app-add-quote-btn></app-add-quote-btn>
+</div>
+
+<div class="home-quotes" *ngFor="let quote of quotes">
+   <app-quote 
+   [quote] = "quote"
+   (notify) = "onNotify($event)"
+   ></app-quote>
+</div>
+
+
+
+

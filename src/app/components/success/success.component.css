@@ -1,0 +1,25 @@
+.success{
+   background-color: rgb(12,11,11);
+   color: #f4f4f4;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: flex-start;
+   padding: 5px 10px;
+   align-items: center;
+   width:98%;
+   margin:5px auto;
+   border-radius:3px;
+
+}
+.success p{
+   color: #f4f4f4;
+   margin: 5px;
+   font-size: 1.1rem;
+}
+
+@media only screen and (min-width:760px){
+   .success{
+      width:60%;
+   }
+}

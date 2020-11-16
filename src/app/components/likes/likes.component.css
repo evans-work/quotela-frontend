@@ -1,0 +1,27 @@
+.likes{
+   padding:5px;
+   display:flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: flex-start;
+   align-items: center;
+}
+.likes img{
+   max-width: 50px;
+   max-height: 50px;
+   object-fit: contain;
+   padding:5px;
+}
+.likes span{
+   font-size: 1.5rem;
+   font-weight: bolder;
+   padding:5px;
+
+}
+.full{
+   fill:#ef5361;
+}
+.empty{
+   fill: white;
+   
+}

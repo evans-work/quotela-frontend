@@ -1,0 +1,31 @@
+
+<div class="quote" *ngIf="render">
+   <div class="quote-topbar">
+      <app-user [userId] = "userId"></app-user>
+      <app-quote-options *ngIf="showOptions"
+      [quoteId]= "id"
+      (deleteQuote) = "onDelete($event)">
+      </app-quote-options>
+   </div>
+   <div class="quote-content"(click)="onClick()">
+      <app-quote-block 
+      [by]= "by"
+      [quoteText] = "quoteText"
+      [backgroundColor]="backgroundColor"
+      [textColor]="textColor">
+      
+      </app-quote-block>
+   </div>
+   
+
+   <div class="quote-footer">
+      <app-likes
+      [likes]= "likes"
+      [backgroundColor] = "backgroundColor"
+      [textColor] = "textColor"
+      [quoteId] = "id"
+      (notify) = "onNotify($event)">
+      </app-likes>
+   </div>
+   
+</div>

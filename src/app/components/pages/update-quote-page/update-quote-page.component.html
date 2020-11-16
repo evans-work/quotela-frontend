@@ -1,0 +1,9 @@
+<div class="update-quote-page">
+   <div  *ngIf="quoteLoaded | async" class="update-quote-form">
+      <app-quote-form 
+      [formData]='formData'
+      [action] = 'action'
+      [quoteId] = 'quoteId'>
+   </app-quote-form>
+   </div>
+</div>

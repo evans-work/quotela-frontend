@@ -1,0 +1,17 @@
+<form [formGroup]="loginForm"(ngSubmit) = "onSubmit(loginForm.value)" class="login-form">
+   <h3>Login</h3>
+   <app-error 
+   *ngIf="showError"
+   [errorMessage] = "errorMessage">
+
+   </app-error>
+   <input type="email" formControlName="email"id="email"placeholder="Email">
+   <input type="password" formControlName="password"id="password"placeholder="Password">
+   <button 
+   [class]="submitClass" 
+   type="submit"
+   [disabled]="disabled">Login</button>
+   <small>Create an account
+      <a routerLink = "/register"> Here</a>
+   </small>
+</form>
